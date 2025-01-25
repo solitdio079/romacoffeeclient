@@ -159,8 +159,7 @@ const Hero = () => {
       <div className="lg:w-1/2 w-full justify-items-center lg:justify-items-start text-center lg:text-left flex-col justify-center  space-y-4">
         <h1 className="text-white font-bold text-5xl ">Roma Coffee Tea</h1>
         <p className="text-base-content/80 text-base text-gray-400">
-          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          Vivo pro Capulus.
         </p>
         <div className="flex space-x-2">
           <Link to="#contact" className="btn btn-primary -motion-translate-y-loop-50 motion-duration-[2s] motion-ease-spring-smooth">
