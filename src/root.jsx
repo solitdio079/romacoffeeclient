@@ -509,7 +509,7 @@ const Footer = () => {
             <span className="icon-[tabler--brand-google] size-5"></span>
           </a>
           <a href="https://bysolitdio.net" className="link" aria-label="Google Link">
-            <img src="./bysolitdio.svg" className="w-24 bg-black"></img>
+            <img src="./bysolitdio.svg" className="w-24 bg-black p-2"></img>
           </a>
         </div>
       </div>
