@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ['Merriweather', 'Oswald', 'Open Sans'],
+      serif: ['Raleway', 'Merriweather'],
+    },
   },
   plugins: [
     require('flyonui'),
