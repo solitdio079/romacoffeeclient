@@ -182,8 +182,11 @@ const Hero = () => {
 }
 const Services = () => {
   return (
-    <div id="services" className="flex bg-white intersect:motion-opacity-in-0 intersect:motion-duration-[2s] flex-col backdrop-blur-md justify-between space-y-4 items-center lg:flex-row min-h-96 p-10">
-      <div className="card sm:max-w-sm">
+    <div
+      id="services"
+      className="flex bg-white  intersect:motion-opacity-in-0 intersect:motion-duration-[2s] flex-col backdrop-blur-md justify-between space-y-4 items-center lg:flex-row min-h-96 p-10"
+    >
+      <div className="card sm:max-w-sm  intersect:motion-preset-slide-up">
         <div className="card-body">
           <button
             className="btn btn-square btn-gradient btn-lg btn-primary"
@@ -200,7 +203,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="card sm:max-w-sm">
+      <div className="card sm:max-w-sm  intersect:motion-preset-slide-up">
         <div className="card-body">
           <button
             className="btn btn-square btn-gradient btn-lg btn-primary"
@@ -217,7 +220,7 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="card sm:max-w-sm">
+      <div className="card sm:max-w-sm  intersect:motion-preset-slide-up">
         <div className="card-body">
           <button
             className="btn btn-square btn-gradient btn-lg btn-primary"
@@ -238,7 +241,10 @@ const Services = () => {
 }
 const About = () => {
   return (
-    <div id="about" className="flex bg-white intersect:motion-opacity-in-0 intersect:motion-duration-[2s] flex-col backdrop-blur-md items-center lg:flex-row p-10">
+    <div
+      id="about"
+      className="flex bg-white  intersect:motion-preset-slide-up intersect:motion-opacity-in-0 intersect:motion-duration-[2s] flex-col backdrop-blur-md items-center lg:flex-row p-10"
+    >
       <div className="lg:w-1/2 w-full justify-items-center lg:justify-items-start text-center lg:text-left flex-col justify-center  space-y-4">
         <p className="text-base-content/80 text-base text-primary">Bizim</p>
         <h1 className="text-gray-950 font-bold text-5xl">Hakkımızda</h1>
@@ -457,7 +463,7 @@ const Contact = () => {
 } 
 const ContectCard = ({icon,title, value}) => {
   return (
-    <div className="card intersect:motion-opacity-in-0 intersect:motion-duration-[2s] shadow-none sm:card-side max-w-sm sm:max-w-full">
+    <div className="card  intersect:motion-preset-slide-up intersect:motion-opacity-in-0 intersect:motion-duration-[2s] shadow-none sm:card-side max-w-sm sm:max-w-full">
       <figure>
         <div
           className=" flex justify-center items-center p-5  text-white bg-primary"
@@ -476,7 +482,7 @@ const ContectCard = ({icon,title, value}) => {
 
 const Footer = () => {
   return (
-    <footer className="footer intersect:motion-opacity-in-0 intersect:motion-duration-[2s] bg-base-200/60 px-6 py-4">
+    <footer className="footer  intersect:motion-preset-slide-up intersect:motion-opacity-in-0 intersect:motion-duration-[2s] bg-base-200/60 px-6 py-4">
       <div className="flex w-full flex-wrap items-center justify-between">
         <div className="flex items-center gap-2 text-xl font-bold">
           <img src="./logo.png" className="w-14 lg:w-24" />
