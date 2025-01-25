@@ -288,8 +288,8 @@ const Contact = () => {
     <div id="contact" className="flex intersect:motion-opacity-in-0 intersect:motion-duration-[2s] flex-col backdrop-blur-md items-center lg:flex-row p-10">
       <div className="lg:w-1/2 w-full justify-items-center lg:justify-items-start text-center lg:text-left flex-col justify-center  space-y-4">
         <p className="text-base-content/80 text-base text-primary">Bizimle</p>
-        <h1 className="text-gray-950 font-bold text-5xl">İletişime Geçin</h1>
-        <p className="text-base-content/80 text-base text-gray-900">
+        <h1 className="font-bold text-5xl">İletişime Geçin</h1>
+        <p className="text-base-content/80 text-base">
           Explore the latest enhancements and updates. Stay informed with our
           new features designed to improve your experience and deliver greater
           value.
@@ -312,7 +312,7 @@ const Contact = () => {
         />
       </div>
       <div className="lg:w-1/2 w-full flex justify-center">
-        <div className="card lg:max-w-lg w-full">
+        <div className="card lg:max-w-lg w-full my-3 lg:my-0">
           <div className="card-header">
             <h5 className="card-title">Franchise Talebi</h5>
           </div>
