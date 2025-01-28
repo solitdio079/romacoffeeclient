@@ -1,16 +1,7 @@
 //import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
-export default function Footer() {
-  const location = useLocation()
 
-  useEffect(() => {
-    const loadFlyonui = async () => {
-      await import('flyonui/flyonui')
-      window.HSStaticMethods.autoInit()
-    }
-    loadFlyonui()
-  }, [location.pathname])
+export default function Footer() {
+  
   return (
     <footer className="footer  intersect:motion-preset-slide-up intersect:motion-opacity-in-0 intersect:motion-duration-[2s] bg-base-200/60 px-6 py-4">
       <div className="flex w-full flex-wrap items-center justify-between">
