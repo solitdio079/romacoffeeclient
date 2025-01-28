@@ -1,23 +1,9 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from 'react'
-import {  useFetcher,  } from 'react-router-dom'
-//import Hero from '../components/Hero';
-import { towns, districts } from '../../utils/turkey'
-import toast, { Toaster } from 'react-hot-toast'
+
 
 
 export default function Contact (){
-  const fetcher = useFetcher()
-  const [selectedTown, setSelectedTown] = useState('37')
-  useEffect(() => {
-    const toastOptions = { duration: 5000 }
-
-    fetcher.data
-      ? fetcher.data.msg
-        ? toast.success(fetcher.data.msg, toastOptions)
-        : toast.error(fetcher.data, toastOptions)
-      : ''
-  })
+ 
   return (
     <div
       id="contact"
@@ -49,145 +35,11 @@ export default function Contact (){
         />
       </div>
       <div className="lg:w-1/2 w-full flex justify-center">
-        <div className="card lg:max-w-lg w-full my-3 lg:my-0">
-          <div className="card-header">
-            <h5 className="card-title">Franchise Talebi</h5>
-          </div>
-          <fetcher.Form method="post" className="card-body">
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div>
-                <label className="label label-text" htmlFor="firstName">
-                  {' '}
-                  Ad{' '}
-                </label>
-                <input
-                  type="text"
-                  placeholder="John"
-                  className="input"
-                  id="firstName"
-                  name="firstName"
-                  required
-                />
-              </div>
-              <Toaster />
-              <div>
-                <label className="label label-text" htmlFor="lastName">
-                  {' '}
-                  Soyad{' '}
-                </label>
-                <input
-                  type="text"
-                  placeholder="Doe"
-                  className="input"
-                  id="lastName"
-                  name="lastName"
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div>
-                <label className="label label-text" htmlFor="email">
-                  {' '}
-                  Email{' '}
-                </label>
-                <input
-                  type="email"
-                  className="input"
-                  placeholder="john@gmail.com"
-                  id="email"
-                  name="email"
-                  aria-label="john@gmail.com"
-                  required=""
-                />
-              </div>
-              <div>
-                <label className="label label-text" htmlFor="phone">
-                  {' '}
-                  Telefon{' '}
-                </label>
-                <div className="input-group">
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    className="input"
-                    placeholder="+90 598 000 00 00"
-                    required
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div>
-                <label className="label label-text" htmlFor="town">
-                  İl
-                </label>
-                <select
-                  defaultValue={selectedTown}
-                  onChange={(e) => setSelectedTown(e.target.value)}
-                  className="select max-w-sm appearance-none"
-                  aria-label="select"
-                  required
-                  id="town"
-                  name="town"
-                >
-                  {' '}
-                  {towns.map((item) => (
-                    <option value={item.id} key={item.id}>
-                      {item.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div>
-                <label className="label label-text" htmlFor="district">
-                  Ilçe
-                </label>
-                <div className="input-group">
-                  <select
-                    className="select max-w-sm appearance-none"
-                    aria-label="select"
-                    required
-                    id="district"
-                    name="district"
-                  >
-                    {districts
-                      .filter((item) => item.il_id === selectedTown)
-                      .map((item) => (
-                        <option value={item.id} key={item.id}>
-                          {item.name}
-                        </option>
-                      ))}
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 gap-6">
-              <div>
-                <label className="label label-text" htmlFor="textareaLabel">
-                  {' '}
-                  Söylemek istediğiniz{' '}
-                </label>
-                <textarea
-                  className="textarea"
-                  placeholder="Hello!!!"
-                  id="textareaLabel"
-                  name="message"
-                ></textarea>
-              </div>
-            </div>
-            <button className="btn my-3 btn-gradient btn-primary">
-              {fetcher.state === 'idle' ? (
-                'Gönder'
-              ) : (
-                <span className="loading loading-spinner"></span>
-              )}
-            </button>
-          </fetcher.Form>
-        </div>
+        <img
+          className="mask mask-hexagon-2 size-8/12"
+          src={'./gallery1.jpg'}
+          alt="mask image"
+        />
       </div>
     </div>
   )

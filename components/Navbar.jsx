@@ -34,7 +34,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li>
-                <NavLink className="dropdown-item" to="/gallery">
+                <NavLink className="dropdown-item" to="/sube">
                   Şubelerimiz
                 </NavLink>
               </li>

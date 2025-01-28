@@ -8,26 +8,41 @@ import App from './App'
 import About from './routes/About'
 import HomePage from './routes/Home'
 import Contact from './routes/Contact'
+import Franchise from './routes/Franchising'
+import Sube from './routes/Sube'
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
     action: franchiseAction,
     errorElement: <ErrorPage />,
-    children: [{
-      index: true,
-      element: <HomePage />,
-      errorElement: <ErrorPage/>
-    },
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+        errorElement: <ErrorPage />,
+      },
       {
         path: '/about',
         element: <About />,
         errorElement: <ErrorPage />,
-      }, {
-        path: "/contact",
+      },
+
+      {
+        path: '/contact',
         element: <Contact />,
-        errorElement: <ErrorPage/>
-      }
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "/sube",
+        element: <Sube />,
+        errorElement:<ErrorPage/>
+      },
+      {
+        path: '/franchising',
+        element: <Franchise/>,
+        errorElement: <ErrorPage />,
+      },
     ],
   },
 ])
