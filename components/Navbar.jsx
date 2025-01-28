@@ -1,5 +1,16 @@
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 export default function Navbar() {
+     const location = useLocation()
+
+     useEffect(() => {
+       const loadFlyonui = async () => {
+         await import('flyonui/flyonui')
+         window.HSStaticMethods.autoInit()
+       }
+       loadFlyonui()
+     }, [location.pathname])
   return (
     <nav className="intersect:motion-opacity-in-0 intersect:motion-duration-[2s] intersect:motion-translate-y-in-100 navbar rounded-none justify-between gap-4 sticky top-0 z-50 shadow">
       <div className="navbar-start">

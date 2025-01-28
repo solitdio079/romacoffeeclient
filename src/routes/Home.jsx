@@ -16,7 +16,7 @@ const Carousel = () => {
   }'
         className="relative w-full rounded-none intersect:motion-opacity-in-0 intersect:motion-duration-[2s] intersect:motion-preset-slide-up"
       >
-        <div className="carousel min-h-96">
+        <div className="carousel min-h-96 rounded-none">
           <div className="carousel-body h-full opacity-0">
             <div
               className="carousel-slide"
