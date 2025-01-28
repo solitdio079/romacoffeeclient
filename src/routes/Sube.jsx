@@ -2,7 +2,7 @@
 import { sube } from "../../utils/subeler"
 export default function Sube() {
     return (
-      <div className="flex flex-col lg:flex-row intersect:motion-preset-slide-up intersect:motion-opacity-in-0 intersect:motion-duration-[2s] p-10">
+      <div className="flex items-center justify-center space-x-2 flex-col lg:flex-row intersect:motion-preset-slide-up intersect:motion-opacity-in-0 intersect:motion-duration-[2s] p-10">
         {sube.map((item, index) => (
           <div key={index} className="card image-full sm:max-w-sm">
             <figure>
