@@ -12,7 +12,7 @@ const Carousel = () => {
         data-carousel='{
     "loadingClasses": "opacity-0",
     "dotsItemClasses": "carousel-box",
-    "isAutoPlay": true, "speed": 4000 
+    "isAutoPlay": true, "speed": 5000 
   }'
         className="relative w-full rounded-none intersect:motion-opacity-in-0 intersect:motion-duration-[2s] intersect:motion-preset-slide-up"
       >

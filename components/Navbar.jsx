@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 export default function Navbar() {
@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className="intersect:motion-opacity-in-0 intersect:motion-duration-[2s] intersect:motion-translate-y-in-100 navbar rounded-none justify-between gap-4 sticky top-0 z-50 shadow">
       <div className="navbar-start">
-        <div className="dropdown relative inline-flex [--auto-close:inside] [--offset:9]">
+        <div className="dropdown lg:hidden relative inline-flex [--auto-close:inside] [--offset:9]">
           <button
             id="dropdown-name"
             type="button"
@@ -28,34 +28,56 @@ export default function Navbar() {
           <ul
             className="dropdown-menu dropdown-open:opacity-100 hidden"
             role="menu"
-            data-scrollspy="#pages"
-            data-scrollspy-scrollable-parent="#pages"
             aria-orientation="vertical"
             aria-labelledby="dropdown-name"
           >
             <li>
-              <Link className="dropdown-item" to="/about">
-                Hakkımızda
-              </Link>
-            </li>
-            <li>
-              <Link className="dropdown-item" to="#gallery">
-                Şubelerimiz
-              </Link>
-            </li>
-            <li>
-              <Link className="dropdown-item" to="/contact">
-                İletişim
-              </Link>
-            </li>
-            <hr className="border-base-content/25 -mx-2 my-3" />
-            <li>
-              <Link className="dropdown-item" to="/">
+              <NavLink className="dropdown-item" to="/">
                 Ana Sayfa
-              </Link>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="dropdown-item" to="/about">
+                Hakkımızda
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="dropdown-item" to="/gallery">
+                Şubelerimiz
+              </NavLink>
+            </li>
+            <li>
+              <NavLink className="dropdown-item" to="/contact">
+                İletişim
+              </NavLink>
+            </li>
+
+            <hr className="border-base-content/25 -mx-2 my-3" />
+
+            <li>
+              <NavLink className="dropdown-item" to="/franchising">
+                Franchising
+              </NavLink>
             </li>
           </ul>
         </div>
+        <ul className="gap-4 menu-horizontal hidden lg:flex">
+          <li>
+            <NavLink to="/">Ana Sayfa</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">Hakkımızda</NavLink>
+          </li>
+          <li>
+            <NavLink to="/gallery">Şubelerimiz</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">İletişim</NavLink>
+          </li>
+          <li>
+            <NavLink to="/franchising">Franchising</NavLink>
+          </li>
+        </ul>
       </div>
       <div className="navbar-center flex items-center">
         <a
@@ -78,3 +100,5 @@ export default function Navbar() {
     </nav>
   )
 }
+
+
