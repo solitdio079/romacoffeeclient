@@ -35,14 +35,14 @@ const Carousel = () => {
                   </p>
                   <div className="flex space-x-2">
                     <Link
-                      to="#contact"
+                      to="/franchising"
                       className="btn btn-primary -motion-translate-y-loop-50 motion-duration-[2s] motion-ease-spring-smooth"
                     >
                       <span className="icon-[tabler--home]"></span> Franchising
                     </Link>
 
-                    <Link to="#gallery" className="btn btn-secondary">
-                      Galeri
+                    <Link to="/about" className="btn btn-secondary">
+                      Hakkımızda
                     </Link>
                   </div>
                 </div>
