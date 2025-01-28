@@ -14,7 +14,7 @@ const Carousel = () => {
     "dotsItemClasses": "carousel-box",
     "isAutoPlay": true, "speed": 2000 
   }'
-        className="relative w-full intersect:motion-opacity-in-0 intersect:motion-duration-[2s] intersect:motion-preset-slide-up"
+        className="relative w-full rounded-none intersect:motion-opacity-in-0 intersect:motion-duration-[2s] intersect:motion-preset-slide-up"
       >
         <div className="carousel min-h-96">
           <div className="carousel-body h-full opacity-0">
