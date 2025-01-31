@@ -3,91 +3,91 @@
 export const images = [
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8529.png',
+    src: './DSCF8529.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8539.jpg',
+    src: './DSCF8539.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8552.jpg',
+    src: './DSCF8552.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8613.jpg',
+    src: './DSCF8613.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8649.jpg',
+    src: './DSCF8649.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8666.jpg',
+    src: './DSCF8666.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8776.jpg',
+    src: './DSCF8776.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8820.jpg',
+    src: './DSCF8820.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8855.jpg',
+    src: './DSCF8855.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8888.jpg',
+    src: './DSCF8888.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8966.jpg',
+    src: './DSCF8966.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF8974.jpg',
+    src: './DSCF8974.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF9083.jpg',
+    src: './DSCF9083.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF9226.jpg',
+    src: './DSCF9226.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF9299.jpg',
+    src: './DSCF9299.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF9339.jpg',
+    src: './DSCF9339.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF9351.jpg',
+    src: './DSCF9351.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF9356.jpg',
+    src: './DSCF9356.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF9367.jpg',
+    src: './DSCF9367.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF9386.jpg',
+    src: './DSCF9386.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF9388.jpg',
+    src: './DSCF9388.webp',
   },
   {
     id: Math.round(Math.random() * 10e9),
-    src: './DSCF9393.png',
+    src: './DSCF9393.webp',
   },
   
 ]
