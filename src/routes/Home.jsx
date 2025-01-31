@@ -49,7 +49,7 @@ const Carousel = () => {
                 <div className="lg:w-1/2 w-full flex justify-center">
                   <img
                     className="mask mask-hexagon size-8/12"
-                    src={'./gallery3.jpg'}
+                    src={'./DSCF8966.jpg'}
                     alt="mask image"
                   />
                 </div>
