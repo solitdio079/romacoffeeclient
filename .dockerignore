@@ -1,4 +1,7 @@
-README.md
 node_modules
-.git
+dist
 *.log
+.git
+.gitignore
+Dockerfile
+
