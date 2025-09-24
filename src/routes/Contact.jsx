@@ -31,7 +31,7 @@ export default function Contact (){
         <ContectCard
           icon="icon-[tabler--phone]"
           title="Telefonumuz"
-          value="+90 546 836 13 26"
+          value="+90 537 578 92 21"
         />
       </div>
       <div className="lg:w-1/2 w-full flex justify-center">
